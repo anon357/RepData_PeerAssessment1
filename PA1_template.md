@@ -234,8 +234,8 @@ table(activity.data.noNA$daytype)
 
 ```
 ## 
-## weekday 
-##   17568
+## weekday weekend 
+##   12960    4608
 ```
 
 ```r
@@ -244,14 +244,14 @@ head(table(activity.data.noNA$date, activity.data.noNA$daytype), n = 7)
 
 ```
 ##             
-##              weekday
-##   2012-10-01     288
-##   2012-10-02     288
-##   2012-10-03     288
-##   2012-10-04     288
-##   2012-10-05     288
-##   2012-10-06     288
-##   2012-10-07     288
+##              weekday weekend
+##   2012-10-01     288       0
+##   2012-10-02     288       0
+##   2012-10-03     288       0
+##   2012-10-04     288       0
+##   2012-10-05     288       0
+##   2012-10-06       0     288
+##   2012-10-07       0     288
 ```
 
 
@@ -265,12 +265,12 @@ head(av.by.interval.noNA)
 
 ```
 ##   interval daytype meansteps
-## 1        0 weekday   1.49180
-## 2        5 weekday   0.29508
-## 3       10 weekday   0.11475
-## 4       15 weekday   0.13115
-## 5       20 weekday   0.06557
-## 6       25 weekday   1.81967
+## 1        0 weekday    2.0222
+## 2        0 weekend    0.0000
+## 3        5 weekday    0.4000
+## 4        5 weekend    0.0000
+## 5       10 weekday    0.1556
+## 6       10 weekend    0.0000
 ```
 
 ```r
